@@ -1,0 +1,10 @@
+/ffmpeg*
+/files
+/whisper-pyannote
+/audio_fragments
+/__pycache__
+/*/ffmpeg*
+/*/files
+/*/whisper-pyannote
+/*/audio_fragments
+/*/__pycache__
