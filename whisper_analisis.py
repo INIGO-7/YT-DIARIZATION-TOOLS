@@ -36,7 +36,7 @@ class TranscribeAudio:
     def save_DF_as_CSV(self, destination, filename):
         if self.result != None:
             segments_df = pd.DataFrame(self.result['segments'])
-            segments_df.to_csv(destination + filename)
+            segments_df.to_csv(os.path.join(destination + filename))
             print(f"-------------- {filename} saved in: {destination} --------------")
 
 def one_url():
