@@ -3,40 +3,41 @@ from yt_downloader import GetFromYoutube
 import pandas as pd
 import os
 
-def preparation(url, filename, extension, rename=True):
+def preparation(url, filename=None, extension=".wav"):
 
     """
     If we do not yet have extracted the audio, we can do it here with
-    the youtube url and desired_filename which is name + extension.
+    the youtube url and renaming or not the output file.
     """
 
-    if rename: GetFromYoutube(url).get_audio_and_rename(filename, extension)
+    if filename != None: GetFromYoutube(url).get_audio_and_rename(filename, extension)
     else: GetFromYoutube(url).get_audio(extension)
 
 class TranscribeAudio:
-    def __init__(self, model, file):
-        self.model = model
-        self.file = file
+    def __init__(self, model):
+        self.model = whisper.load_model(model)
+        self.result = ""
 
-    def transcribe(self, verbose=True):
-        model = whisper.load_model(self.model)
-        self.result = model.transcribe(self.file, verbose=verbose)
+    def transcribe(self, file, verbose=True):
+        self.result = self.model.transcribe(file, verbose=verbose)
         print("-------------- Transcription successfull! --------------")
 
     def save_WriteTXT(self, destination, filename):
-        # call to WriteTXT returns a instance of ResultWriter, saving the destination directory
-        txtout = whisper.utils.WriteTXT(destination)
-        # call to txtout object writes the segments found to a file name based on target
-        txtout(self.result, filename)
+        if self.result != None:
+            # call to WriteTXT returns a instance of ResultWriter, saving the destination directory
+            txtout = whisper.utils.WriteTXT(destination)
+            # call to txtout object writes the segments found to a file name based on target
+            txtout(self.result, filename)
 
-        # this way sets up to iterate over all know output formats.
-        allout = whisper.utils.get_writer('all', destination)
-        allout(self.result, filename)
+            # this way sets up to iterate over all know output formats.
+            allout = whisper.utils.get_writer('all', destination)
+            allout(self.result, filename)
 
     def save_DF_as_CSV(self, destination, filename):
-        segments_df = pd.DataFrame(self.result['segments'])
-        segments_df.to_csv(destination + filename)
-        print(f"-------------- {filename} saved in: {destination} --------------")
+        if self.result != None:
+            segments_df = pd.DataFrame(self.result['segments'])
+            segments_df.to_csv(destination + filename)
+            print(f"-------------- {filename} saved in: {destination} --------------")
 
 def one_url():
 
