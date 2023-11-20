@@ -3,6 +3,7 @@
 /files
 /whisper-pyannote
 /audio_fragments
+/diarized_audio
 /__pycache__
 /*/ffmpeg*
 /*/files
