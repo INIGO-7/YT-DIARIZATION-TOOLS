@@ -176,3 +176,86 @@ to_replace_dict = {
 
 replacer_dict["lexFridman-mrBeast-11012023"] = to_replace_dict
 
+to_replace_dict = {
+    "1": "01,HUBERMAN",
+    "2": "00,HUBERMAN",
+    "3": "01,HUBERMAN",
+    "4": "00,HUBERMAN",
+    "5": "02,HUBERMAN;01,ANDREW",
+    "6": "01,HUBERMAN;00,ANDREW",
+    "7": "01,HUBERMAN",
+    "8": "01,HUBERMAN;02,ANDREW",
+    "9": "01,HUBERMAN;00,ANDREW",
+    "10": "02,HUBERMAN;03,ANDREW",
+    "11": "02,HUBERMAN;01,ANDREW",
+    "12": "00,HUBERMAN",
+    "13": "00,HUBERMAN;01,ANDREW"
+}
+
+replacer_dict["flagrant-andrewHubermam-17102022"] = to_replace_dict
+
+to_replace_dict = {
+    "1": "01,HANCOCK;00,ANDREW",
+    "2": "01,HANCOCK;00,ANDREW",
+    "3": "03,HANCOCK;02,ANDREW",
+    "4": "01,HANCOCK;02,ANDREW",
+    "5": "01,HANCOCK;02,ANDREW",
+    "6": "00,HANCOCK",
+    "7": "01,HANCOCK",
+    "8": "02,HANCOCK;01,ANDREW",
+    "9": "01,HANCOCK;02,ANDREW",
+    "10": "00,HANCOCK;01,ANDREW",
+    "11": "00,HANCOCK;01,ANDREW",
+    "12": "00,HANCOCK;01,ANDREW",
+    "13": "02,HANCOCK",
+    "14": "02,HANCOCK;01,ANDREW",
+    "15": "03,HANCOCK;00,ANDREW",
+    "16": "",
+    "17": "00,HANCOCK;02,ANDREW",
+    "18": "00,HANCOCK"
+}
+
+replacer_dict["flagrant-grahamHancock-27062023"] = to_replace_dict
+
+to_replace_dict = {
+    "1": "01,MARQUES;03,ANDREW",
+    "2": "00,MARQUES",
+    "3": "01,MARQUES",
+    "4": "01,MARQUES",
+    "5": "04,MARQUES;02,ANDREW",
+    "6": "00,MARQUES",
+    "7": "00,MARQUES;01,ANDREW",
+    "8": "02,MARQUES;03,ANDREW",
+    "9": "01,MARQUES;03,ANDREW",
+    "10": "00,MARQUES;02,ANDREW",
+    "11": "02,MARQUES;03,ANDREW"
+}
+
+replacer_dict["flagrant-MKBHD-01102022"] = to_replace_dict
+
+to_replace_dict = {
+    "1": "00,MRBEAST",
+    "2": "00,MRBEAST;03,ANDREW",
+    "3": "01,MRBEAST",
+    "4": "00,MRBEAST",
+    "5": "01,MRBEAST;00,ANDREW",
+    "6": "01,MRBEAST;00,ANDREW",
+    "7": "00,MRBEAST;01,ANDREW",
+    "8": "03,MRBEAST;02,ANDREW",
+    "9": "00,MRBEAST;01,ANDREW",
+    "10": "02,MRBEAST",
+    "11": "02,MRBEAST;01,ANDREW",
+    "12": "00,MRBEAST;02,ANDREW",
+    "13": "02,MRBEAST;01,ANDREW",
+    "14": "02,MRBEAST;03,ANDREW",
+    "15": "02,MRBEAST;01,ANDREW",
+    "16": "01,MRBEAST;00,ANDREW",
+    "17": "02,MRBEAST;00,ANDREW",
+    "18": "03,MRBEAST",
+    "19": "02,MRBEAST;01,ANDREW",
+    "20": "01,MRBEAST;02,ANDREW",
+    "21": "00,MRBEAST;01,ANDREW",
+    "22": "02,MRBEAST;03,ANDREW"
+}
+
+replacer_dict["flagrant-mrBeast-27092022"] = to_replace_dict
