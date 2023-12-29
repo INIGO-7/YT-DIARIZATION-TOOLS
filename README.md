@@ -2,12 +2,12 @@
 # YT-DIARIZATION-TOOLS
 
 ## Description
-**YouTube diarization tools** automatically diarizes YouTube videos, creating detailed dataframes with speaker-tagged textual interventions. It's perfect for researchers, content creators, and anyone interested in analyzing spoken content in YouTube videos.
+**YouTube diarization tools** automatically diarizes YouTube videos, creating dataframes with speaker-tagged textual interventions. It's perfect for researchers, content creators, and anyone interested in analyzing spoken content in YouTube videos.
 
 ## Usage
-> Be guided by the [transcribe-and-diarize.ipynb](YT-DIARIZATION-TOOLS/whisper-speaker-recognition/transcribe-and-diarize.ipynb) notebook under YT-DIARIZATION-TOOLS/whisper-speaker-recognition to get separated diarizations and transcriptions of the requested youtube videos\
+> Be guided by the [transcribe-and-diarize.ipynb](whisper-speaker-recognition/transcribe-and-diarize.ipynb) notebook under YT-DIARIZATION-TOOLS/whisper-speaker-recognition to get separated diarizations and transcriptions of the requested youtube videos\
 > \
-> Be guided by the [consistency-checker.ipynb](YT-DIARIZATION-TOOLS/consistency-checker.ipynb) notebook under YT-DIARIZATION-TOOLS to link the diarizations and transcriptions obtained before into one data output in the desired dataframe format.
+> Be guided by the [consistency-checker.ipynb](consistency-checker.ipynb) notebook under YT-DIARIZATION-TOOLS to link the diarizations and transcriptions obtained before into one data output in the desired dataframe format.
 
 
 ## Features 📋
