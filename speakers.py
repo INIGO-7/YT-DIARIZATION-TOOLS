@@ -1,3 +1,33 @@
+"""
+IDENTIFY EACH SPEAKER IN THE SPLITS!
+
+Below are the speaker-to-name mappings for our project, which consists in the diarization of some podcasts. It can serve as an example. 
+To illustrate them, here is a simpler example to show how it works:
+
+replacer_dict = {}
+
+video_one = {                                       # first video
+    "1": "00,SPEAKER_X",                            # First split, and which are the speakers we want to use in that split
+    "2": "00,SPEAKER_Y;01,SPEAKER_X",               # Second split
+    "3": "00,SPEAKER_X;01,SPEAKER_Y;02,SPEAKER_U"   # Third and last split
+}
+
+replacer_dict["video_name"] = video_one             # Now add the dictionary that correctly maps the first video speakers in each split to the diarized splits.
+
+video_two = {                           # Second video
+    "1": "00,SPEAKER_Z;01,SPEAKER_W",   # First split
+    "2": "",                            # Second split, empty because we may want to ignore it (not useful info, maybe there's an ad, etc...)
+    "3": "00,SPEAKER_W;01,SPEAKER_K"    # Third and last split
+}
+
+replacer_dict["other_video_name"] = video_two       # Add the second video to the replacer
+
+# Once we finish, this replacer will be imported in the consistency-checker.ipynb notebook to map each speaker of each video.
+# (the keys are video names, the value is the dict linking split with speakers)
+
+"""
+
+
 replacer_dict = {}
 
 to_replace_dict = {
