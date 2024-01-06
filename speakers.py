@@ -188,25 +188,6 @@ to_replace_dict = {
 replacer_dict["lexFridman-matthewMcConaughey-13062023"] = to_replace_dict
 
 to_replace_dict = {
-    "1": "00,MRBEAST;01,LEXFRIDMAN",
-    "2": "00,MRBEAST;01,LEXFRIDMAN",
-    "3": "00,LEXFRIDMAN;01,MRBEAST",
-    "4": "00,MRBEAST;01,LEXFRIDMAN",
-    "5": "00,MRBEAST;01,LEXFRIDMAN",
-    "6": "00,MRBEAST;01,LEXFRIDMAN",
-    "7": "00,LEXFRIDMAN;01,MRBEAST",
-    "8": "00,MRBEAST;01,LEXFRIDMAN",
-    "9": "00,MRBEAST;01,LEXFRIDMAN",
-    "10": "00,MRBEAST;01,LEXFRIDMAN",
-    "11": "00,LEXFRIDMAN;01,MRBEAST",
-    "12": "00,LEXFRIDMAN;01,MRBEAST",
-    "13": "00,LEXFRIDMAN;01,MRBEAST",
-    "14": "00,LEXFRIDMAN;01,MRBEAST"
-}
-
-replacer_dict["lexFridman-mrBeast-11012023"] = to_replace_dict
-
-to_replace_dict = {
     "1": "01,HUBERMAN",
     "2": "00,HUBERMAN",
     "3": "01,HUBERMAN",
@@ -289,6 +270,74 @@ to_replace_dict = {
 }
 
 replacer_dict["flagrant-mrBeast-27092022"] = to_replace_dict
+
+to_replace_dict = {
+    "1": "00,SNOWDEN;01,JOEROGAN",
+    "2": "00,SNOWDEN",
+    "3": "00,SNOWDEN;01,JOEROGAN",
+    "4": "00,SNOWDEN;01,JOEROGAN",
+    "5": "01,SNOWDEN;00,JOEROGAN",
+    "6": "00,SNOWDEN;01,JOEROGAN",
+    "7": "00,SNOWDEN",
+    "8": "00,SNOWDEN",
+    "9": "01,SNOWDEN;00,JOEROGAN",
+    "10": "01,SNOWDEN;00,JOEROGAN",
+    "11": "00,SNOWDEN",
+    "12": "01,SNOWDEN;00,JOEROGAN",
+    "13": "00,SNOWDEN;01,JOEROGAN",
+    "14": "00,SNOWDEN;01,JOEROGAN",
+    "15": "00,SNOWDEN",
+    "16": "01,SNOWDEN;00,JOEROGAN",
+    "17": "00,SNOWDEN;01,JOEROGAN"
+}
+
+replacer_dict["JRE-edwardSnowden-23102019"] = to_replace_dict
+
+to_replace_dict = {
+    "1": "01,JOEY;02,JOEROGAN",
+    "2": "00,JOEY;01,JOEROGAN",
+    "3": "00,JOEY;01,JOEROGAN",
+    "4": "01,JOEY;00,JOEROGAN",
+    "5": "02,JOEY;01,JOEROGAN",
+    "6": "02,JOEY;03,JOEROGAN",
+    "7": "00,JOEY;01,JOEROGAN",
+    "8": "00,JOEY;01,JOEROGAN",
+    "9": "01,JOEY;00,JOEROGAN",
+    "10": "00,JOEY;01,JOEROGAN",
+    "11": "00,JOEY;02,JOEROGAN",
+    "12": "01,JOEY;00,JOEROGAN",
+    "13": "01,JOEY;02,JOEROGAN",
+    "14": "02,JOEY;00,JOEROGAN",
+    "15": "01,JOEY;00,JOEROGAN",
+    "16": "00,JOEY;01,JOEROGAN",
+    "17": "00,JOEY",
+    "18": "00,JOEY;01,JOEROGAN"
+}
+
+replacer_dict["JRE-joeyDiaz-26032020"] = to_replace_dict
+
+to_replace_dict = {
+    "1": "",
+    "2": "00,KANYE;01,JOEROGAN",
+    "3": "01,KANYE",
+    "4": "00,KANYE;01,JOEROGAN",
+    "5": "01,KANYE;00,JOEROGAN",
+    "6": "01,KANYE;00,JOEROGAN",
+    "7": "01,KANYE;00,JOEROGAN",
+    "8": "01,KANYE;00,JOEROGAN",
+    "9": "00,KANYE;01,JOEROGAN",
+    "10": "01,KANYE;00,JOEROGAN",
+    "11": "02,KANYE;00,JOEROGAN",
+    "12": "00,KANYE",
+    "13": "01,KANYE;00,JOEROGAN",
+    "14": "01,KANYE;00,JOEROGAN",
+    "15": "00,KANYE;01,JOEROGAN",
+    "16": "02,KANYE;00,JOEROGAN",
+    "17": "01,KANYE;00,JOEROGAN",
+    "18": "02,KANYE;00,JOEROGAN"
+}
+
+replacer_dict["JRE-kanyeWest-24102020"] = to_replace_dict
 
 to_replace_dict = {
     "1": "00,JOEROGAN;01,MIKETYSON",
