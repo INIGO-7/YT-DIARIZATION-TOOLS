@@ -1,3 +1,33 @@
+"""
+IDENTIFY EACH SPEAKER IN THE SPLITS!
+
+Below are the speaker-to-name mappings for our project, which consists in the diarization of some podcasts. It can serve as an example. 
+To illustrate them, here is a simpler example to show how it works:
+
+replacer_dict = {}
+
+video_one = {                                       # first video
+    "1": "00,SPEAKER_X",                            # First split, and which are the speakers we want to use in that split
+    "2": "00,SPEAKER_Y;01,SPEAKER_X",               # Second split
+    "3": "00,SPEAKER_X;01,SPEAKER_Y;02,SPEAKER_U"   # Third and last split
+}
+
+replacer_dict["video_name"] = video_one             # Now add the dictionary that correctly maps the first video speakers in each split to the diarized splits.
+
+video_two = {                           # Second video
+    "1": "00,SPEAKER_Z;01,SPEAKER_W",   # First split
+    "2": "",                            # Second split, empty because we may want to ignore it (not useful info, maybe there's an ad, etc...)
+    "3": "00,SPEAKER_W;01,SPEAKER_K"    # Third and last split
+}
+
+replacer_dict["other_video_name"] = video_two       # Add the second video to the replacer
+
+# Once we finish, this replacer will be imported in the consistency-checker.ipynb notebook to map each speaker of each video.
+# (the keys are video names, the value is the dict linking split with speakers)
+
+"""
+
+
 replacer_dict = {}
 
 to_replace_dict = {
@@ -259,3 +289,102 @@ to_replace_dict = {
 }
 
 replacer_dict["flagrant-mrBeast-27092022"] = to_replace_dict
+
+to_replace_dict = {
+    "1": "00,JOEROGAN;01,MIKETYSON",
+    "2": "00,MIKETYSON;01,JOEROGAN",
+    "3": "00,MIKETYSON;01,JOEROGAN",
+    "4": "00,JOEROGAN;01,MIKETYSON",
+    "5": "00,MIKETYSON;01,JOEROGAN",
+    "6": "00,MIKETYSON;01,JOEROGAN",
+    "7": "00,MIKETYSON;01,JOEROGAN",
+    "8": "00,JOEROGAN;01,MIKETYSON",
+    "9": "00,JOEROGAN;01,MIKETYSON",
+    "10": "00,JOEROGAN;01,MIKETYSON",
+    "11": "00,JOEROGAN;01,MIKETYSON",
+    "12": "00,MIKETYSON;01,JOEROGAN"
+}
+
+replacer_dict["JRE-mikeTyson-04092020"] = to_replace_dict
+
+to_replace_dict = {
+    "1": "00,JOEROGAN;01,MILEYCYRUS",
+    "2": "00,JOEROGAN;01,MILEYCYRUS",
+    "3": "00,MILEYCYRUS;01,JOEROGAN",
+    "4": "00,MILEYCYRUS;01,JOEROGAN",
+    "5": "00,MILEYCYRUS;01,JOEROGAN",
+    "6": "00,MILEYCYRUS;01,MILEYCYRUS;02,MILEYCYRUS;03,JOEROGAN",
+    "7": "00,MILEYCYRUS;01,JOEROGAN",
+    "8": "00,JOEROGAN;01,MILEYCYRUS",
+    "9": "00,MILEYCYRUS;01,JOEROGAN",
+    "10": "00,JOEROGAN;01,MILEYCYRUS",
+    "11": "00,JOEROGAN;01,MILEYCYRUS",
+    "12": "00,MILEYCYRUS;01,JOEROGAN",
+    "13": "00,JOEROGAN;01,MILEYCYRUS"
+}
+
+replacer_dict["JRE-mileyCirus-02092020"] = to_replace_dict
+
+to_replace_dict = {
+    "1": "00,NILDEGRASSE;01,JOEROGAN",
+    "2": "00,NILDEGRASSE;01,JOEROGAN",
+    "3": "00,NILDEGRASSE;01,NILDEGRASSE;02,NILDEGRASSE",
+    "4": "00,NILDEGRASSE;01,JOEROGAN",
+    "5": "00,JOEROGAN;01,NILDEGRASSE",
+    "6": "00,JOEROGAN;01,NILDEGRASSE",
+    "7": "00,NILDEGRASSE;01,JOEROGAN",
+    "8": "00,NILDEGRASSE;01,JOEROGAN",
+    "9": "00,JOEROGAN;01,NILDEGRASSE",
+    "10": "00,JOEROGAN;01,NILDEGRASSE",
+    "11": "00,NILDEGRASSE;01,JOEROGAN",
+    "12": "00,NILDEGRASSE;01,JOEROGAN",
+    "13": "00,NILDEGRASSE;01,JOEROGAN",
+    "14": "00,NILDEGRASSE;01,NILDEGRASSE;02,JOEROGAN"
+}
+
+replacer_dict["JRE-neildeGrasseTyson-06092019"] = to_replace_dict
+
+to_replace_dict = {
+    "1": "00,KEVINHART;01,JOEROGAN",
+    "2": "00,KEVINHART;01,JOEROGAN",
+    "3": "00,KEVINHART;01,JOEROGAN",
+    "4": "00,JOEROGAN;01,KEVINHART",
+    "5": "00,JOEROGAN;01,KEVINHART",
+    "6": "00,KEVINHART;01,JOEROGAN",
+    "7": "00,KEVINHART;01,JOEROGAN",
+    "8": "00,KEVINHART;01,JOEROGAN",
+    "9": "01,KEVINHART;02,JOEROGAN",
+    "10": "00,KEVINHART;01,JOEROGAN",
+    "11": "00,KEVINHART;01,JOEROGAN",
+    "12": "00,KEVINHART;01,JOEROGAN"
+}
+
+replacer_dict["JRE-kevinHart-25052020"] = to_replace_dict
+
+to_replace_dict = {
+    "1": "00,POSTMALONE;01,JOEROGAN",
+    "2": "00,POSTMALONE;01,JOEROGAN",
+    "3": "00,POSTMALONE;01,JOEROGAN",
+    "4": "00,JOEROGAN;01,POSTMALONE",
+    "5": "00,POSTMALONE;01,JOEROGAN",
+    "6": "00,JOEROGAN;01,POSTMALONE",
+    "7": "00,JOEROGAN;01,POSTMALONE",
+    "8": "",
+    "9": "00,JOEROGAN;01,POSTMALONE",
+    "10": "00,JOEROGAN;01,POSTMALONE",
+    "11": "",
+    "12": "00,JOEROGAN;01,POSTMALONE",
+    "13": "01,POSTMALONE;02,JOEROGAN",
+    "14": "00,POSTMALONE;01,JOEROGAN;02,POSTMALONE",
+    "15": "00,POSTMALONE;01,POSTMALONE;02,JOEROGAN",
+    "16": "00,JOEROGAN;01,POSTMALONE",
+    "17": "00,POSTMALONE;01,JOEROGAN;02,POSTMALONE",
+    "18": "00,JOEROGAN;01,POSTMALONE",
+    "19": "00,POSTMALONE;01,JOEROGAN",
+    "20": "01,POSTMALONE;02,JOEROGAN",
+    "21": "",
+    "22": "00,POSTMALONE;01,POSTMALONE;02,JOEROGAN",
+    "23": "00,POSTMALONE;01,JOEROGAN"
+}
+
+replacer_dict["JRE-postMalone-29072020"] = to_replace_dict
